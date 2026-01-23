@@ -1,24 +1,28 @@
 #include <stdio.h>
 
-int main() {
-    float side, area, volume;
-
-    
-    printf("Enter the side length: ");
-    
-    // Epic Insane scan
-    if (scanf("%f", &side) != 1) {
-        
+int is_even(int num) {
+    if (num % 2 == 0){
         return 1;
+    } else{
+        return 0;
     }
+   }
+   
+   int main(){
+   int number;
+   int result;
+    
+    printf("Enter the number: ");
+    scanf("%i", &number);
 
-    // Insane Calculations
-    area = side * side;
-    volume = side * side * side;
+   result = is_even(number);
 
-    printf("\nResults:\n");
-    printf("- Square area is: %.2f\n", area);
-    printf("- Volume cube is: %.2f\n", volume);
+if (result == 1){
 
+    printf("The number is pair\n");
+  }else{
+    printf("the number isn't pair lol\n");
+  }  
+   
     return 0;
 }
