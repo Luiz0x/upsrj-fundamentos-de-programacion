@@ -8,20 +8,21 @@ int is_even(int num) {
     }
    }
    
+   
    int main(){
    int number;
    int result;
     
-    printf("Enter the number: ");
+    printf("Ingrese un numero: ");
     scanf("%i", &number);
 
    result = is_even(number);
 
 if (result == 1){
 
-    printf("The number is pair\n");
+    printf("El numero es par\n");
   }else{
-    printf("the number isn't pair lol\n");
+    printf("El numero es impar\n");
   }  
    
     return 0;
